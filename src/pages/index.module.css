@@ -22,10 +22,6 @@
     background-color: #523824;
 }
 
-.features .column {
-    margin-bottom: 2rem;
-}
-
 .features i {
     margin-bottom: 1rem;
     font-size: 5rem;
@@ -49,4 +45,8 @@
 
 .features .browser {
     color: #2395e7;
+}
+
+.carousel {
+    padding-top: 0rem;
 }

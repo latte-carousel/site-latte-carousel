@@ -6020,6 +6020,11 @@ latest-version@^3.0.0:
   dependencies:
     package-json "^4.0.0"
 
+latte-carousel@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/latte-carousel/-/latte-carousel-1.2.1.tgz#e6abf26319e44518d8cccf6a3f5bd397d2c57866"
+  integrity sha512-3tLUBWPOYsY1+th7tDKbuSMHW4rhdKQhw8RCJYVtTBQ3ht1rqfV7iGuS83n4DA68pJbSyLu4KhIRa/E9GaDk6Q==
+
 lcid@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/lcid/-/lcid-1.0.0.tgz#308accafa0bc483a3867b4b6f2b9506251d1b835"
@@ -8020,6 +8025,11 @@ react-hot-loader@^4.1.0:
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
     shallowequal "^1.0.2"
+
+react-latte-carousel@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/react-latte-carousel/-/react-latte-carousel-0.10.0.tgz#765d6da3897e8586034c81f42e593b17e24eb8f1"
+  integrity sha512-0/yJm5OixT66x23DMbx3TLvKxGeTb3Fqkp3qnB3VSq0GFsLEb9oc4WidtCKuHA+/39Rqig+4E5s0zjd5zKs6tQ==
 
 react-lifecycles-compat@^3.0.4:
   version "3.0.4"

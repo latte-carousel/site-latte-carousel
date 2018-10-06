@@ -19,8 +19,10 @@
         "gatsby-plugin-manifest": "^2.0.4",
         "gatsby-plugin-offline": "^2.0.5",
         "gatsby-plugin-react-helmet": "^3.0.0",
+        "latte-carousel": "^1.2.1",
         "react": "^16.5.2",
         "react-dom": "^16.5.2",
-        "react-helmet": "^5.2.0"
+        "react-helmet": "^5.2.0",
+        "react-latte-carousel": "^0.10.0"
     }
 }

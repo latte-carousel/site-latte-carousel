@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
+import Carousel from "../components/carousel";
 
 import style from "./index.module.css";
 import logo from "../images/colored_small.png";
@@ -70,6 +71,12 @@ export default () => {
                             </p>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <section className={`section ${style.carousel}`}>
+                <div className="container">
+                    <Carousel />
                 </div>
             </section>
         </Layout>
