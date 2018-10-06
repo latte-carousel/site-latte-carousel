@@ -1,0 +1,52 @@
+.hero {
+    background-color: #f5e0d1;
+}
+
+.hero h1,
+.hero h2 {
+    color: #523824;
+}
+
+.hero .buttons a {
+    border-color: #523824;
+    color: #523824;
+    background-color: #f5e0d1;
+}
+
+.hero .buttons a:hover {
+    border-color: #523824;
+}
+
+.hero .buttons .is-selected {
+    color: #f5e0d1;
+    background-color: #523824;
+}
+
+.features .column {
+    margin-bottom: 2rem;
+}
+
+.features i {
+    margin-bottom: 1rem;
+    font-size: 5rem;
+}
+
+.features p {
+    color: #523824;
+}
+
+.features .mobile {
+    color: #e93e1c;
+}
+
+.features .touch {
+    color: #73c738;
+}
+
+.features .javascript {
+    color: #f9c124;
+}
+
+.features .browser {
+    color: #2395e7;
+}

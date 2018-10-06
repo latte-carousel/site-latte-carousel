@@ -1,0 +1,31 @@
+.navbar {
+    background-color: #f5e0d1;
+}
+
+.navbar a,
+.navbar a:hover {
+    color: #523824;
+    font-size: 1.25rem;
+}
+
+.navbar img {
+    margin-right: 0.5rem;
+    max-height: 45px;
+}
+
+.footer {
+    height: 5rem;
+    line-height: 5rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #bc8b67;
+    text-align: center;
+}
+
+.footer a {
+    color: #fefcfb;
+}
+
+.footer i {
+    color: #e62d2d;
+}

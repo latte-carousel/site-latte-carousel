@@ -1,0 +1,26 @@
+{
+    "name": "site-latte-carousel",
+    "description": "LatteCarousel is a lightweight and responsive carousel.",
+    "author": {
+        "name": "LatteCarousel",
+        "url": "https://latte-carousel.github.io"
+    },
+    "license": "CC-BY-4.0",
+    "homepage": "https://latte-carousel.github.io",
+    "scripts": {
+        "develop": "gatsby develop",
+        "build": "gatsby build",
+        "serve": "gatsby serve"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.3.1",
+        "bulma": "^0.7.1",
+        "gatsby": "^2.0.19",
+        "gatsby-plugin-manifest": "^2.0.4",
+        "gatsby-plugin-offline": "^2.0.5",
+        "gatsby-plugin-react-helmet": "^3.0.0",
+        "react": "^16.5.2",
+        "react-dom": "^16.5.2",
+        "react-helmet": "^5.2.0"
+    }
+}
