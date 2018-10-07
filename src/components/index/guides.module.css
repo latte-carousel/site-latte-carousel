@@ -22,3 +22,24 @@
     border-bottom-color: #523824;
     color: #523824;
 }
+
+.guides .content h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #523824;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.guides .content p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #523824;
+}
+
+.guides .content :global(code.language-text) {
+    border-bottom: 1px solid #523824;
+    border-radius: 0;
+    color: #523824;
+    background-color: #f5e0d1;
+}

@@ -42,7 +42,7 @@ export default class Guides extends React.Component {
                         <ul>{items}</ul>
                     </div>
 
-                    <div dangerouslySetInnerHTML={{ __html: current.node.html }} />
+                    <div className={style.content} dangerouslySetInnerHTML={{ __html: current.node.html }} />
                 </div>
             </section>
         );
