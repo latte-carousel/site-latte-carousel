@@ -1,5 +1,8 @@
-.item {
-    width: 100%;
+.demo {
+    padding-bottom: 0rem;
+}
+
+.demo .container .item {
     height: 13rem;
     line-height: 13rem;
     font-size: 3rem;
@@ -7,10 +10,10 @@
     color: white;
 }
 
-.container div:nth-child(even) > .item {
+.demo .container div:nth-child(even) > .item {
     background-color: #bc8b67;
 }
 
-.container div:nth-child(odd) > .item {
+.demo .container div:nth-child(odd) > .item {
     background-color: #a77856;
 }

@@ -1,0 +1,24 @@
+.features i {
+    margin-bottom: 1rem;
+    font-size: 5rem;
+}
+
+.features p {
+    color: #523824;
+}
+
+.features .mobile {
+    color: #e93e1c;
+}
+
+.features .touch {
+    color: #73c738;
+}
+
+.features .javascript {
+    color: #f9c124;
+}
+
+.features .browser {
+    color: #2395e7;
+}

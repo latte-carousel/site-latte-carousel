@@ -1,0 +1,24 @@
+.guides {
+    background-color: #f5e0d1;
+}
+
+.guides h3 {
+    color: #523824;
+}
+
+.guides .tabs ul {
+    border-bottom-width: 2px;
+    border-bottom-color: #dbbba4;
+}
+
+.guides .tabs a {
+    margin-bottom: -2px;
+    border-bottom-width: 2px;
+    border-bottom-color: #dbbba4;
+    color: #523824;
+}
+
+.guides .tabs li.is-active a {
+    border-bottom-color: #523824;
+    color: #523824;
+}
