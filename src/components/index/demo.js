@@ -1,17 +1,11 @@
 import React from "react";
+import { LatteCarousel, LatteItem } from "react-latte-carousel";
 
 import style from "./demo.module.css";
 
 export default class Demo extends React.Component {
     constructor(props) {
         super(props);
-
-        if (typeof window === "undefined") {
-            return;
-        }
-
-        this.LatteCarousel = require("react-latte-carousel").LatteCarousel;
-        this.LatteItem = require("react-latte-carousel").LatteItem;
 
         this.options = {
             count: 3,
@@ -29,26 +23,18 @@ export default class Demo extends React.Component {
         };
     }
 
-    renderCarousel() {
-        if (this.LatteCarousel == null || this.LatteItem == null) {
-            return;
-        }
-
-        return (
-            <this.LatteCarousel options={this.options}>
-                {[1, 2, 3, 4, 5, 6].map((index) => (
-                    <this.LatteItem key={index}>
-                        <div className={style.item}>{index}</div>
-                    </this.LatteItem>
-                ))}
-            </this.LatteCarousel>
-        );
-    }
-
     render() {
         return (
             <section className={`section ${style.demo}`}>
-                <div className={`container ${style.container}`}>{this.renderCarousel()}</div>
+                <div className={`container ${style.container}`}>
+                    <LatteCarousel options={this.options}>
+                        {[1, 2, 3, 4, 5, 6].map((index) => (
+                            <LatteItem key={index}>
+                                <div className={style.item}>{index}</div>
+                            </LatteItem>
+                        ))}
+                    </LatteCarousel>
+                </div>
             </section>
         );
     }
