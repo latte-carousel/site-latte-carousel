@@ -7,7 +7,7 @@ export default class Guides extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = { selected: "guide-es5" };
+        this.state = { selected: "guide-es6" };
     }
 
     changeGuide(id) {

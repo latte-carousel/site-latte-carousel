@@ -1,6 +1,6 @@
 ---
 id: guide-es5
-order: 1
+order: 2
 title: ES5
 ---
 
@@ -11,29 +11,29 @@ To get started, either download the package files or use the [jsDelivr](https://
 First step is to include the stylesheet into the `<head>` section:
 
 ```html
-<!-- Package -->
-<link rel="stylesheet" href="latte-carousel.min.css">
+<!-- Download -->
+<link rel="stylesheet" href="/libs/latte-carousel.min.css">
 
 <!-- CDN -->
 <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/latte-carousel@1.2.1/dist/latte-carousel.min.css">
+      href="https://cdn.jsdelivr.net/npm/latte-carousel@1.3.0/dist/latte-carousel.min.css">
 ```
 
 Then, place the following script near the end of the `<body>` section:
 
 ```html
-<!-- Package -->
-<script src="latte-carousel.min.js"></script>
+<!-- Download -->
+<script src="/libs/latte-carousel.min.js"></script>
 
 <!-- CDN -->
-<script src="https://cdn.jsdelivr.net/npm/latte-carousel@1.2.1/dist/latte-carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/latte-carousel@1.3.0/dist/latte-carousel.min.js"></script>
 ```
 
 #### Creating a carousel
 
 With both stylesheet and script included, now it is time to create a carousel.
 
-LatteCarousel uses the following markup for each carousel (ignoring the id attribute):
+LatteCarousel uses the following markup for each carousel:
 
 ```html
 <div class="latte-carousel" id="carousel">
