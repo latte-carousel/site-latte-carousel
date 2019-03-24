@@ -8,8 +8,8 @@ export const title = "LatteCarousel";
 export const description = "LatteCarousel is a lightweight and responsive carousel without any dependencies.";
 export const keywords = ["Carousel", "Responsive", "JavaScript", "Web", "HTML", "CSS"];
 export const theme = "#f5e0d1";
-export const url = "https://latte-carousel.github.io";
-export const image = "https://latte-carousel.github.io/images/inverted_small.png";
+export const url = "https://lattecarousel.dev";
+export const image = "https://lattecarousel.dev/img/inverted_small.png";
 
 export default () => {
     return (

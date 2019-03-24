@@ -27,13 +27,20 @@ With the build ready, now it is time to create a carousel.
 LatteCarousel uses the following markup for each carousel:
 
 ```jsx
+import React from "react";
+import { LatteCarousel, LatteItem } from "react-latte-carousel";
+
 class Banner extends React.Component {
     constructor(props) {
         super(props);
 
+        this.carouselRef = React.createRef();
+
         this.options = {
             count: 3,
+            move: 1,
             touch: true,
+            mode: "align",
             buttons: true,
             dots: true,
             rewind: true,
@@ -50,7 +57,7 @@ class Banner extends React.Component {
 
     render() {
         return (
-            <LatteCarousel options={this.options} ref="carousel">
+            <LatteCarousel options={this.options} ref={this.carouselRef}>
                 <LatteItem>1</LatteItem>
                 <LatteItem>2</LatteItem>
                 <LatteItem>3</LatteItem>
@@ -61,17 +68,36 @@ class Banner extends React.Component {
 }
 ```
 
+With TypeScript:
+
+```typescript
+import { IOptions } from "latte-carousel";
+
+const options: IOptions = { ... }
+```
+
 > Avoid applying styles to `.latte-carousel` or `.latte-item` elements as they are used to compute dimensions.
 >
-> The recommended way is to create a new `<div>` inside `.latte-item` and apply styles to this element (e.g. change the default font size of zero).
+> The recommended way is to create a new `<div>` inside `.latte-item` and apply styles to this element (e.g. change the default font size).
 
-#### Triggering events
+#### Using events
 
 With a carousel reference, you can also trigger events:
 
 ```javascript
-this.refs.carousel.next();
-this.refs.carousel.previous();
+const node = this.carouselRef.current;
 
-this.refs.carousel.goTo(0);
+node.next();
+node.previous();
+
+node.goTo(0);
+```
+
+```javascript
+node.trigger("next");
+node.trigger("previous");
+
+node.trigger("goto", 0);
+
+node.trigger("update");
 ```

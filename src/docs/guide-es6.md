@@ -37,16 +37,18 @@ LatteCarousel uses the following markup for each carousel:
 
 > Avoid applying styles to `.latte-carousel` or `.latte-item` elements as they are used to compute dimensions.
 >
-> The recommended way is to create a new `<div>` inside `.latte-item` and apply styles to this element (e.g. change the default font size of zero).
+> The recommended way is to create a new `<div>` inside `.latte-item` and apply styles to this element (e.g. change the default font size).
 
 After `DOMContentLoaded` event, create the carousel passing a selector for the `.latte-carousel` element and a options object:
 
 ```javascript
-import { Carousel, Options } from "latte-carousel";
+import { Carousel } from "latte-carousel";
 
 const options = {
     count: 3,
+    move: 1,
     touch: true,
+    mode: "align",
     buttons: true,
     dots: true,
     rewind: true,
@@ -63,7 +65,16 @@ const options = {
 const carousel = new Carousel("#carousel", options);
 ```
 
-#### Triggering events
+With TypeScript:
+
+```typescript
+import { Carousel, IOptions } from "latte-carousel";
+
+const options: IOptions = { ... }
+const carousel: Carousel = new Carousel("#carousel", options);
+```
+
+#### Using events
 
 With a carousel instance, you can also trigger events:
 
@@ -72,10 +83,19 @@ carousel.trigger("next");
 carousel.trigger("previous");
 
 carousel.trigger("goto", 0);
+
+carousel.trigger("update");
+```
+
+Listen to events:
+
+```javascript
+carousel.on("move", () => {});
+carousel.on("moved", () => {});
 ```
 
 Or remove the entire carousel:
 
 ```javascript
-carousel.remove();
+carousel.trigger("remove");
 ```

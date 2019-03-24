@@ -12,11 +12,10 @@ First step is to include the stylesheet into the `<head>` section:
 
 ```html
 <!-- Download -->
-<link rel="stylesheet" href="/libs/latte-carousel.min.css">
+<link rel="stylesheet" href="/libs/latte-carousel.min.css" />
 
 <!-- CDN -->
-<link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/latte-carousel@1.3.0/dist/latte-carousel.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/latte-carousel@1.5.3/dist/latte-carousel.min.css" />
 ```
 
 Then, place the following script near the end of the `<body>` section:
@@ -26,7 +25,7 @@ Then, place the following script near the end of the `<body>` section:
 <script src="/libs/latte-carousel.min.js"></script>
 
 <!-- CDN -->
-<script src="https://cdn.jsdelivr.net/npm/latte-carousel@1.3.0/dist/latte-carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/latte-carousel@1.5.3/dist/latte-carousel.min.js"></script>
 ```
 
 #### Creating a carousel
@@ -46,14 +45,16 @@ LatteCarousel uses the following markup for each carousel:
 
 > Avoid applying styles to `.latte-carousel` or `.latte-item` elements as they are used to compute dimensions.
 >
-> The recommended way is to create a new `<div>` inside `.latte-item` and apply styles to this element (e.g. change the default font size of zero).
+> The recommended way is to create a new `<div>` inside `.latte-item` and apply styles to this element (e.g. change the default font size).
 
 After `DOMContentLoaded` event, create the carousel passing a selector for the `.latte-carousel` element and a options object:
 
 ```javascript
 var options = {
     count: 3,
+    move: 1,
     touch: true,
+    mode: "align",
     buttons: true,
     dots: true,
     rewind: true,
@@ -70,7 +71,7 @@ var options = {
 var carousel = new latte.Carousel("#carousel", options);
 ```
 
-#### Triggering events
+#### Using events
 
 With a carousel instance, you can also trigger events:
 
@@ -79,10 +80,19 @@ carousel.trigger("next");
 carousel.trigger("previous");
 
 carousel.trigger("goto", 0);
+
+carousel.trigger("update");
+```
+
+Listen to events:
+
+```javascript
+carousel.on("move", function() {});
+carousel.on("moved", function() {});
 ```
 
 Or remove the entire carousel:
 
 ```javascript
-carousel.remove();
+carousel.trigger("remove");
 ```

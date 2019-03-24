@@ -23,18 +23,18 @@
     color: #523824;
 }
 
+@media (max-width: 450px) {
+    .guides .content {
+        overflow-x: scroll;
+    }
+}
+
 .guides .content h4 {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     color: #523824;
     font-size: 1.25rem;
     font-weight: 400;
-}
-
-.guides .content p {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    color: #523824;
 }
 
 .guides .content :global(code.language-text) {
@@ -57,4 +57,14 @@
     margin-top: 0rem;
     margin-bottom: 0rem;
     color: #523824;
+}
+
+.guides .content table th {
+    padding: 0.5em;
+    border-color: #bc8b67;
+}
+
+.guides .content table td {
+    padding: 0.5em;
+    border-color: transparent;
 }
