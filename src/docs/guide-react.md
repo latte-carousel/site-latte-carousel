@@ -4,6 +4,14 @@ order: 3
 title: React
 ---
 
+#### Warning
+
+> This is a wrapper component for LatteCarousel and not a full rewrite in React.
+>
+> This should be used only to display components that don't require DOM events.
+>
+> React events will not work because of DOM manipulation inside latte-carousel.
+
 #### Importing the library
 
 To get started, install both packages:
