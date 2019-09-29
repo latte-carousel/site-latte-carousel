@@ -15,7 +15,7 @@ First step is to include the stylesheet into the `<head>` section:
 <link rel="stylesheet" href="/libs/latte-carousel.min.css" />
 
 <!-- CDN -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/latte-carousel@1.5.5/dist/latte-carousel.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/latte-carousel@1.5.6/dist/latte-carousel.min.css" />
 ```
 
 Then, place the following script near the end of the `<body>` section:
@@ -25,7 +25,7 @@ Then, place the following script near the end of the `<body>` section:
 <script src="/libs/latte-carousel.min.js"></script>
 
 <!-- CDN -->
-<script src="https://cdn.jsdelivr.net/npm/latte-carousel@1.5.5/dist/latte-carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/latte-carousel@1.5.6/dist/latte-carousel.min.js"></script>
 ```
 
 #### Creating a carousel
