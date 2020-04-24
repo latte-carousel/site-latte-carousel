@@ -39,7 +39,7 @@ LatteCarousel uses the following markup for each carousel:
 >
 > The recommended way is to create a new `<div>` inside `.latte-item` and apply styles to this element (e.g. change the default font size).
 
-After `DOMContentLoaded` event, create the carousel passing a selector for the `.latte-carousel` element and a options object:
+After `DOMContentLoaded` event, create the carousel passing a selector for the `.latte-carousel` element and the options object:
 
 ```javascript
 import { Carousel } from "latte-carousel";

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 
 import style from "./hero.module.css";
 import logo from "../../images/colored_small.png";
@@ -20,9 +19,9 @@ export default () => {
                     </h2>
 
                     <div className={`buttons has-addons is-centered ${style.buttons}`}>
-                        <Link to="#get-started" className={`button is-selected ${style.isSelected}`}>
+                        <a href="#get-started" className={`button is-selected ${style.isSelected}`}>
                             Get Started
-                        </Link>
+                        </a>
                         <a href={npm} className="button">
                             NPM
                         </a>
